@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed:wght@200;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="hero">
+        <video autoplay loop muted fast plays-inline class="back-video">
+            <source src="images/video2.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+           <ul>
+            <li><button type="button">SIGN IN</button></li>
+            <li><button type="button">ABOUT</button></li>
+            <li><button type="button">CONTACT</button></li>
+           </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+       <div class="content">
+        <h5>Do What Excites</h5>
+        <h1>Graphic Studio</h1>
+        </div>
+      
+       
+       </section>
+    <!----lightroom preset----->
+    <section class="lightroom">
+        
+        <div class="Room">
+            <a href=""> <---Shop Presets</a>
+           <h1>LightRoom Presets</h1>
+        </div>
+    </section>
+    <!------LIMITED-->
+    <section class="Limited">
+        <div class="Room1">
+            <a href=""> <---Shop Prints</a>
+           <h1>Limited Edition<br>Prints</h1>
+        </div>
+    </section>
+    <!---Motion -->
+    <section class="Motion">
+        <div class="Room2">
+            <a href=""> Shop MGFX Packs---> </a>
+           <h1>Motion Graphic</h1>
+        </div>
+    </section>
+    <!-------Footer----->
+    <section class="footer">
+        <h4>Get notified when new projects drop</h4>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <h3>Follow</h3>
+        <div class="icon">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+    <!-----jAVASCRIPT for toggle menu------>
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+    
+</body>
+</html>
